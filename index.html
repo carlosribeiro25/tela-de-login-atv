@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de login responsivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+    <div class="login-container bg-base-100">
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="ph ph-sun" id="theme-icon"></i>
+        </button>
+        
+        <div class="login-card bg-base-200 shadow-xl rounded-xl p-8">
+            <div class="text-center mb-8">
+                <h1 class="text-2xl font-bold mb-2">Bem-vindo de volta</h1>
+                <p class="text-base-content/50">Ensira seus dados  para continuar</p>
+            </div>
+            
+            <form>
+                <div class="input-group">
+                    <i class="input-icon ph ph-envelope"></i>
+                    <input type="email" class="input-field" placeholder="E-mail" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="input-icon ph ph-lock"></i>
+                    <input type="password" class="input-field" placeholder="Senha" required>
+                </div>
+                
+                <div class="flex justify-between items-center mb-6">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" class="checkbox checkbox-sm checkbox-primary">
+                        <span class="text-sm">Salvar dados </span>
+                    </label>
+                    
+                    <a href="#" class="text-sm text-primary hover:none">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+            
+            <div class="divider">
+                <span class="divider-text">ou continue com</span>
+            </div>
+            
+            <div class="social-login">
+                <button class="social-btn">
+                    <i class="ph ph-google-logo text-xl"></i>
+                </button>
+                <button class="social-btn">
+                    <i class="ph ph-facebook-logo text-xl"></i>
+                </button>
+                <button class="social-btn">
+                    <i class="ph ph-github-logo text-xl"></i>
+                </button>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-base-content/60">
+                    Não tem uma conta? 
+                    <a href="#" class="text-primary hover:none">Cadastre-se.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
